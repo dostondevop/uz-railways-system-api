@@ -1,0 +1,35 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-server:8761/eureka/
+
+spring:
+  application:
+    name: user-service
+  datasource:
+    url: jdbc:postgresql://postgres:5432/user_service_db
+    username: postgres
+    password: 1
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+server:
+  port: 8080
+
+  ## access token
+jwt:
+  access:
+    token:
+      secretKey: "FFFFGGGGSSSEEEOOOPAASS888A99999ASSAASA09900AS889"
+      expire:
+        date: 86400000
+  refresh:
+    token:
+      secretKey: "FFFFGGGGSSSEEEOOOPAASS888A99999ASSAASA09900AS889"
+      expire:
+        date: 86400000
+
+
