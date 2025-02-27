@@ -1,0 +1,16 @@
+.idea
+api-gateway/.idea
+api-gateway/.gradle
+api-gateway/build
+booking-service/.idea
+booking-service/.gradle
+booking-service/build
+eureka-server/.idea
+eureka-server/build
+eureka-server/.gradle
+notification-service/.gradle
+notification-service/.idea
+notification-service/build
+user-service/.gradle
+user-service/.idea
+user-service/build
