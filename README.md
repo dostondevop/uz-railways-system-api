@@ -22,4 +22,6 @@ Built using a Microservices Architecture, this system ensures high availability,
   • **Kafka** – Enabling real-time event-driven communication between microservices.<br>
   • **OpenFeign & API Gateway** – Ensuring seamless inter-service communication and load balancing.<br>
   • **Circuit Breakers & Load Balancing** – Guaranteeing reliability even under high traffic conditions.<br>
+  <be>
+  <hr>
 This API is a fully functional and production-ready railway management system, designed to <br>handle large-scale operations while offering a seamless user experience. Whether you're managing a <br>national railway system or a private train network, this solution provides everything you need for <br>efficient and intelligent railway operations. 🚄✨
