@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.*;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
@@ -31,8 +32,9 @@ public class AppConfig {
         return mapper;
     }
 
-    @NoArgsConstructor
     @Data
+    @NoArgsConstructor
+    @EqualsAndHashCode(callSuper = true)
     public static class LocalDateTimeSerializer extends JsonSerializer<LocalDateTime> {
         private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 
@@ -42,8 +44,9 @@ public class AppConfig {
         }
     }
 
-    @NoArgsConstructor
     @Data
+    @NoArgsConstructor
+    @EqualsAndHashCode(callSuper = true)
     public static class LocalDateTimeDeserializer extends JsonDeserializer<LocalDateTime> {
         private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 
